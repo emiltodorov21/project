@@ -68,7 +68,7 @@ export default function BookDetails() {
                     <img className="book-img" src={book.imageUrl} alt={book.title} />
                     <h1>{book.title}</h1>
                     <h2 className="levels">Author: {book.maxLevel}</h2>
-                    <p className="type">{book.category}</p>
+                    <p className="type">Genre: {book.category}</p>
                 </div>
 
                 <p className="text">{book.summary}</p>

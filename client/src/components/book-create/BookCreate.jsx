@@ -34,7 +34,7 @@ export default function BookCreate() {
                     <input type="text" id="category" name="category" placeholder="Enter book genre..." />
 
                     <label htmlFor="levels">Author:</label>
-                    <input type="text" id="author" name="maxLevel" min="1" placeholder="Enter book author..." />
+                    <input type="text" id="maxLevel" name="maxLevel" min="1" placeholder="Enter book author..." />
 
                     <label htmlFor="book-img">Image:</label>
                     <input type="text" id="imageUrl" name="imageUrl" placeholder="Upload a photo..." />

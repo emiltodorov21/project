@@ -58,8 +58,8 @@
 }
 
 .type {
-    display: inline-block;
-    color: #a55043;
+    display: block;
+    color: #f37c6a;
     font-size: 19px;
     margin-left: 10px;
 }
