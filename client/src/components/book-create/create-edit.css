@@ -1,0 +1,47 @@
+#create-page,
+#edit-page {
+    position: relative;
+    width: 800px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    background: #a55043; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+input[type="text"] {
+    background: #ffffff; 
+    color: #000000; 
+    padding: 15px;
+    height: 50px;
+    margin-top: 20px; 
+    font-size: 18px; 
+    border: 2px solid #f37c6a;
+    border-radius: 8px;
+}
+
+textarea {
+    width: 100%;
+    min-width: 100%;
+    min-height: 7em;
+    border: 2px solid #f37c6a;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-top: 20px; 
+    color: #000000; 
+    background-color: #ffffff; 
+}
+
+#create-page h1,
+#edit-page h1 {
+    color: #ffffff; 
+}
+
+#create-page p,
+#edit-page p {
+    color: #f37c6a; 
+    line-height: 1.6; 
+}

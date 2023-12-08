@@ -1,0 +1,80 @@
+body {
+    background-image: url('../images/download.jpg');
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+}
+
+
+.auth {
+    width: 100px;
+    margin: 8em auto;
+}
+
+header,
+footer {
+    background-color: #7c3328;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+.home {
+    font-size: 30px;
+    font-family: "Agency FB";
+}
+
+header {
+    position: relative;
+    padding: 10px;
+}
+
+header h1 {
+    display: inline-block;
+    color: white;
+    margin-bottom: auto;
+    font-family: "Agency FB";
+}
+
+header nav {
+    font-size: 27px;
+    font-family: "Agency FB";
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+}
+
+header nav>* {
+    float: left;
+}
+
+footer {
+    padding: 0.5em;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+nav a {
+    margin: 0 0.5em;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: #f37c6a;
+    font-weight: bolder;
+}
+
+.home:hover {
+    color: #f37c6a;
+}
+
+#user,
+#guest {
+    margin: 0;
+    padding: 0;
+}

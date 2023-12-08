@@ -1,0 +1,123 @@
+#book-details {
+    position: relative;
+    display: block;
+    width: 980px;
+    margin: 90px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+#book-details>h1 {
+    color: #a55043;
+    font-family: "Agency FB";
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.info-section {
+    background-color: #a55043;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: multiply;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.book-header {
+    color: #f37c6a;
+    position: relative;
+    padding: 25px;
+    height: 40%;
+}
+
+.book_header>h1 {
+    color: #f37c6a;
+    margin-top: 5px;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.book_header>h4 {
+    color: #f37c6a;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.levels {
+    display: inline-block;
+    margin-top: 15px;
+    color: #f37c6a;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #a55043;
+}
+
+.type {
+    display: inline-block;
+    color: #a55043;
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+.book-img {
+    position: relative;
+    float: left;
+    margin-left: 15px;
+    margin-right: 22px;
+    height: 220px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+.info-section>.text {
+    color:#f37c6a;
+    margin-top: 30px;
+    padding: 60px;
+    height: 50%;
+}
+
+.book-summary {
+    margin-top: 15px;
+    padding: 60px;
+    height: 50%;
+}
+
+.text {
+    font-size: 25px;
+    color: #f37c6a;
+}
+
+.movie_social {
+    height: 10%;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+.movie_social {
+    font-size: 1.6rem;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.buttons {
+    height: 10%;
+    text-align: right;
+    padding-right: 15px;
+    padding-bottom: 40px;
+}
+
+.button {
+    height: 15%;
+    background-color: #f37c6a;
+    padding: 14px;
+    margin-top: auto;
+    font-size: 21px;
+    color: rgb(255, 255, 255);
+}
+
+

@@ -1,57 +1,45 @@
-export default function Home() {
-    return(
+import { useEffect, useState } from "react";
+import withAuth from "../../HOC/withAuth";
+import * as bookService from "../../services/bookService";
+import './welcome.css';
+import RandomBook from "./random-book/RandomBook";
+
+function Home({
+    email,
+}) {
+    // const [latestGames, setLatestGames] = useState([]);
+
+    // useEffect(() => {
+    //     gameService.getLatest()
+    //         .then(result => setLatestGames(result));
+    // },[]);
+
+    const [randomBooks, setRandomBooks] = useState([]);
+
+    useEffect(() => {
+        bookService.getRandomBooks()
+            .then(result => setRandomBooks(result));
+    },[]);
+
+    return (
         <section id="welcome-world">
 
             <div className="welcome-message">
-                <h2>ALL new games are</h2>
-                <h3>Only in GamesPlay</h3>
+                <h2>Welcome to the book world</h2>
+                <h2>Stories shape souls</h2>
             </div>
-            <img src="./images/four_slider_img01.png" alt="hero" />
 
             <div id="home-page">
-                <h1>Latest Games</h1>
+                <h1>Featured Books</h1>
 
-                
-                <div className="game">
-                    <div className="image-wrap">
-                        <img src="./images/CoverFire.png" />
-                    </div>
-                    <h3>Cover Fire</h3>
-                    <div className="rating">
-                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div className="data-buttons">
-                        <a href="#" className="btn details-btn">Details</a>
-                    </div>
-                </div>
-                <div className="game">
-                    <div className="image-wrap">
-                        <img src="./images/ZombieLang.png" />
-                    </div>
-                    <h3>Zombie Lang</h3>
-                    <div className="rating">
-                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div className="data-buttons">
-                        <a href="#" className="btn details-btn">Details</a>
-                    </div>
-                </div>
-                <div className="game">
-                    <div className="image-wrap">
-                        <img src="./images/MineCraft.png" />
-                    </div>
-                    <h3>MineCraft</h3>
-                    <div className="rating">
-                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                    </div>
-                    <div className="data-buttons">
-                        <a href="#" className="btn details-btn">Details</a>
-                    </div>
-                </div>
+                {randomBooks.map(book=><RandomBook key={book._id} {...book}/>)}
 
-               
-                <p className="no-articles">No games yet</p>
+                {!randomBooks.length && <p className="no-articles">No books yet</p>}
+  
             </div>
         </section>
     );
 };
+
+
+export default withAuth(Home);
